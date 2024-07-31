@@ -27,8 +27,8 @@ const FixedRightSide = ({ toggleCertifications, scrollDirection }) => {
         <h1 className="text-custom-gray font-bold leading-none text-5xl md:text-[100px]">
           TRAVIS<br />LESLIE
         </h1>
-        <p className="text-custom-gray font-medium mt-4 text-2xl md:text-4xl">UI/UX DESIGNER</p>
-        <p className="text-custom-gray font-regular mt-8 w-full md:w-[500px] text-lg md:text-xl">
+        <p className="text-custom-gray font-medium mt-8 text-3 xl md:text-5xl">UI/UX DESIGNER</p>
+        <p className="text-custom-gray font-regular mt-8 w-full md:w-[500px] text-lg md:text-lg">
           I’m a versatile UI/UX designer with a passion for designing beautiful, intuitive experiences with a positive impact on people and the business they represent. I have 5+ years of industry experience with user interactions & design.
         </p>
         <div className="mt-12">
