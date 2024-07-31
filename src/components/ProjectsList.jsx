@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React from 'react';
 import ProjectItem from './ProjectItem';
 import { Link } from 'react-router-dom';
 import port1 from '../assets/images/port1.png';
@@ -68,7 +68,7 @@ const ProjectsList = ({ scrollRef, setScrollDirection }) => {
     const { scrollTop, scrollHeight, clientHeight } = e.target;
     if (scrollTop + clientHeight >= scrollHeight) {
       setScrollDirection('up');
-    } else if (scrollTop === 0) {
+    } else {
       setScrollDirection('down');
     }
   };
