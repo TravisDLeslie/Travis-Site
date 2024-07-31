@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import ProjectItem from './ProjectItem';
 import { Link } from 'react-router-dom';
 import port1 from '../assets/images/port1.png';
@@ -63,9 +63,22 @@ const projects = [
   // Add more projects here
 ];
 
-const ProjectsList = () => {
+const ProjectsList = ({ scrollRef, setScrollDirection }) => {
+  const handleScroll = (e) => {
+    const { scrollTop, scrollHeight, clientHeight } = e.target;
+    if (scrollTop + clientHeight >= scrollHeight) {
+      setScrollDirection('up');
+    } else if (scrollTop === 0) {
+      setScrollDirection('down');
+    }
+  };
+
   return (
-    <div className="w-1/2 h-full relative overflow-y-scroll snap-y snap-mandatory">
+    <div
+      ref={scrollRef}
+      className="w-1/2 h-full relative overflow-y-scroll snap-y snap-mandatory"
+      onScroll={handleScroll}
+    >
       <div className="fixed inset-0 bg-custom-gray z-0">
         <div
           className="absolute inset-0 bg-cover bg-center opacity-25"
@@ -75,10 +88,10 @@ const ProjectsList = () => {
       <div className="relative z-10">
         {projects.map((project, index) => (
           <div key={index} className="snap-start h-screen flex items-center justify-center">
-          <Link to={project.link}>
-            <ProjectItem project={project} />
-          </Link>
-        </div>
+            <Link to={project.link}>
+              <ProjectItem project={project} />
+            </Link>
+          </div>
         ))}
       </div>
     </div>
