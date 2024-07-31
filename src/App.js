@@ -4,6 +4,7 @@ import Home from './components/Home';
 import Certifications from './components/Certifications';
 import Contact from './components/Contact';
 import TeslaProject from './pages/TeslaProject';
+import FunkyProject from './pages/FunkyProject';
 
 const App = () => {
   return (
@@ -13,6 +14,8 @@ const App = () => {
         <Route path="/certifications" element={<Certifications />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/project/tesla" element={<TeslaProject />} />
+        <Route path="/project/funky" element={<FunkyProject />} />
+
         {/* Add routes for other projects */}
       </Routes>
     </div>

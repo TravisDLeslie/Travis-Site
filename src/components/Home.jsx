@@ -1,15 +1,21 @@
-import React, { useState, useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import FixedRightSide from './FixedRightSide';
 import ProjectsList from './ProjectsList';
 
 const Home = ({ toggleCertifications }) => {
+  const projectListRef = useRef(null);
   const [scrollDirection, setScrollDirection] = useState('down');
-  const scrollRef = useRef(null);
 
   return (
     <div className="flex h-screen">
-      <ProjectsList scrollRef={scrollRef} setScrollDirection={setScrollDirection} />
-      <FixedRightSide toggleCertifications={toggleCertifications} scrollDirection={scrollDirection} />
+      <ProjectsList scrollRef={projectListRef} setScrollDirection={setScrollDirection} />
+     <div className=''>
+      <FixedRightSide
+        toggleCertifications={toggleCertifications}
+        projectListRef={projectListRef}
+        scrollDirection={scrollDirection}
+      />
+    </div>
     </div>
   );
 };

@@ -14,7 +14,7 @@ const FixedRightSide = ({ toggleCertifications, scrollDirection }) => {
   };
 
   return (
-    <div className="fixed right-0 top-0 h-full w-full md:w-1/2 bg-white p-8 md:p-16 flex flex-col justify-between z-30">
+    <div className="fixed right-0 top-0 h-full w-1/2 bg-white p-8 md:p-16 flex flex-col justify-between z-30">
       <div className="flex justify-between items-center">
         <Link to="/">
           <img src={logo} alt="Logo" className="h-6 w-auto" />

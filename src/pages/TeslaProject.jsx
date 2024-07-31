@@ -18,9 +18,10 @@ const TeslaProject = () => {
   return (
     <div className="bg-white">
       <header className="flex justify-between items-center px-24 py-12 bg-white" style={{ paddingLeft: '100px', paddingRight: '100px' }}>
-      <Link to="/">
+        <Link to="/">
           <img src={logo} alt="Logo" className="h-6 w-auto" />
-        </Link>        <button onClick={toggleMenu} className="focus:outline-none">
+        </Link>        
+        <button onClick={toggleMenu} className="focus:outline-none">
           <img src={menuIcon} alt="Menu" className="h-6 w-auto" />
         </button>
       </header>
@@ -29,35 +30,40 @@ const TeslaProject = () => {
       </div>
       <main className="p-8 flex justify-center">
         <section className="w-full max-w-[1000px]">
-          <div className="text-center mb-8">
-            <h2 className="text-sm font-medium text-gray-600">TESLA • UX/UI DESIGN • CONCEPT</h2>
-            <h1 className="mt-2 text-4xl font-bold text-gray-900">Tesla In-Vehicle Infotainment (IV)</h1>
+          <div className="mb-8">
+            <h2 className="text-sm font-medium text-custom-gray text-left">TESLA • UX/UI DESIGN • CONCEPT</h2>
+            <h1 className="mt-2 text-4xl font-medium text-custom-gray  text-left">Tesla In-Vehicle Infotainment (IV)</h1>
           </div>
           <div className="mt-12">
-            <h2 className="text-2xl font-bold">Overview</h2>
-            <p className="mt-2 text-gray-700">
+            <h2 className="text-2xl text-custom-gray  font-medium text-left">Overview</h2>
+            <p className="mt-2 text-gray-700 text-left">
               Tesla's in-vehicle infotainment system integrates seamlessly with the vehicle's hardware and software to provide a cohesive user experience.
             </p>
+            <div className="mt-4">
+              <img src={port3} alt="Wireframe 2" className="w-full h-auto rounded-lg mb-4" />
+            </div>
           </div>
           <div className="mt-6">
-            <h2 className="text-2xl font-bold">Features</h2>
-            <p className="mt-2 text-gray-700">
+            <h2 className="text-2xl text-custom-gray font-medium text-left">Features</h2>
+            <p className="mt-2 text-gray-700 text-left">
               - Real-time navigation<br/>
               - Streaming entertainment<br/>
               - Voice commands<br/>
               - Climate control
             </p>
+            <div className="mt-4">
+              <img src={port3} alt="Wireframe 2" className="w-full h-auto rounded-lg mb-4" />
+            </div>
           </div>
           <div className="mt-6">
-            <h2 className="text-2xl font-bold">Wireframes</h2>
-            <p className="mt-2 text-gray-700">
+            <h2 className="text-2xl text-custom-gray font-medium text-left">Wireframes</h2>
+            <p className="mt-2 text-gray-700 text-left">
               - Sketches<br/>
               - Lo-Fi wireframes<br/>
               - Hi-Fi mockup/prototype<br/>
               - Delivered in Figma
             </p>
             <div className="mt-4">
-              <img src={port2} alt="Wireframe 1" className="w-full h-auto rounded-lg mb-4" />
               <img src={port3} alt="Wireframe 2" className="w-full h-auto rounded-lg mb-4" />
             </div>
           </div>

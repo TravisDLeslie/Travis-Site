@@ -31,6 +31,7 @@ const projects = [
     image: port3,
     imageBgColor: 'bg-[#FF7135]', // Example background color for another project
     imagePosition: 'center top', // Move image to the top
+    link: '/project/funky',
   },
   {
     title: 'Tesla IVI',
