@@ -8,6 +8,7 @@ import port4 from '../assets/images/port4.png';
 import port5 from '../assets/images/port5.png';
 import port6 from '../assets/images/port6.png';
 import port7 from '../assets/images/port7.png';
+import port8 from '../assets/images/port8.png';
 import topo from '../assets/icons/topo.svg'; // Adjust the path if necessary
 
 const projects = [
@@ -17,6 +18,7 @@ const projects = [
     image: port1,
     imageBgColor: 'bg-custom-purple',
     imagePosition: 'center top', // Move image to the top
+    link: '',
   },
   {
     title: 'Web App',
@@ -24,6 +26,7 @@ const projects = [
     image: port2,
     imageBgColor: 'bg-teal-500', // Example background color for another project
     imagePosition: 'center top', // Move image to the top
+    link: '',
   },
   {
     title: 'Dashboard',
@@ -38,7 +41,7 @@ const projects = [
     description: 'Tesla • concept',
     image: port4,
     imageBgColor: 'bg-teal-500', // Example background color for another project
-    link: '/project/tesla',
+    link: '',
   },
   {
     title: 'E-Commerce',
@@ -46,6 +49,7 @@ const projects = [
     image: port5,
     imageBgColor: 'bg-red-500',
     imagePosition: 'center top', // Example background color for another project
+    link: '',
   },
   {
     title: 'Marketplace',
@@ -53,6 +57,7 @@ const projects = [
     image: port6,
     imageBgColor: 'bg-green-700',
     imagePosition: 'center top', // Example background color for another project
+    link: '',
   },
   {
     title: 'Realestate App',
@@ -60,6 +65,15 @@ const projects = [
     image: port7,
     imageBgColor: 'bg-purple-400',
     magePosition: 'center top', // Example background color for another project
+    link: '',
+  },
+  {
+    title: 'E-Commerce Store',
+    description: 'Tamarack Threads • Shopify',
+    image: port8,
+    imageBgColor: 'bg-[#848484]',
+    imagePosition: 'center top', // Example background color for another project
+    link: '',
   },
   // Add more projects here
 ];
@@ -77,7 +91,7 @@ const ProjectsList = ({ scrollRef, setScrollDirection }) => {
   return (
     <div
       ref={scrollRef}
-      className="w-1/2 h-full relative overflow-y-scroll snap-y snap-mandatory"
+      className="w-1/2 h-full overflow-y-scroll relative overflow-y-scroll snap-y snap-mandatory"
       onScroll={handleScroll}
     >
       <div className="fixed inset-0 bg-custom-gray z-0">

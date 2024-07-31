@@ -36,28 +36,28 @@ const FixedRightSide = ({ toggleCertifications, scrollDirection }) => {
             href="/TravisLeslie_UIUX_Designer.pdf" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="text-custom-gray underline mx-2" 
+            className="text-custom-gray underline mx-2 hover:font-medium" 
             style={{ textDecorationColor: '#FF7135', textUnderlineOffset: '8px' }}
           >
             Resume
           </a> / 
           <a 
             href="https://www.linkedin.com/in/travisdleslie" target="_blank"
-            className="text-custom-gray underline mx-2" 
+            className="text-custom-gray underline mx-2 hover:font-medium" 
             style={{ textDecorationColor: '#FF7135', textUnderlineOffset: '8px' }}
           >
             LinkedIn
           </a> / 
           <a 
             href="#" 
-            className="text-custom-gray underline mx-2" 
+            className="text-custom-gray underline mx-2 hover:font-medium" 
             style={{ textDecorationColor: '#FF7135', textUnderlineOffset: '8px' }}
           >
             Dribbble
           </a> / 
           <Link 
             to="/certifications"
-            className="text-custom-gray underline mx-2" 
+            className="text-custom-gray underline mx-2 hover:font-medium" 
             style={{ textDecorationColor: '#FF7135', textUnderlineOffset: '8px' }} 
             onClick={toggleCertifications}
           >
