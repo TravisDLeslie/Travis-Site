@@ -18,8 +18,9 @@ const TeslaProject = () => {
   return (
     <div className="bg-white">
       <header className="flex justify-between items-center px-24 py-12 bg-white" style={{ paddingLeft: '100px', paddingRight: '100px' }}>
-        <img src={logo} alt="Logo" className="h-6 w-auto" />
-        <button onClick={toggleMenu} className="focus:outline-none">
+      <Link to="/">
+          <img src={logo} alt="Logo" className="h-6 w-auto" />
+        </Link>        <button onClick={toggleMenu} className="focus:outline-none">
           <img src={menuIcon} alt="Menu" className="h-6 w-auto" />
         </button>
       </header>
