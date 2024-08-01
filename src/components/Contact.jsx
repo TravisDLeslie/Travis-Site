@@ -12,16 +12,16 @@ const Contact = () => {
   };
 
   return (
-    <div className="fixed inset-0 bg-white p-16 z-40 flex flex-col justify-between">
-      <div className="flex justify-between items-center w-full">
+    <div className="fixed inset-0 bg-white z-40 flex flex-col justify-between overflow-auto">
+      <div className="p-4 md:p-16 flex justify-between items-center w-full">
         <img src={logo} alt="Logo" className="h-6 w-auto" />
         <button onClick={handleClose} className="focus:outline-none">
           <img src={closeIcon} alt="Close" className="h-6 w-auto" />
         </button>
       </div>
-      <div className="flex justify-center w-full mt-8">
+      <div className="flex justify-center w-full mt-8 px-4 md:px-0">
         <div className="max-w-[700px] w-full">
-          <h1 className="text-custom-gray font-bold leading-none" style={{ fontSize: '48px' }}>
+          <h1 className="text-custom-gray font-bold leading-none text-3xl md:text-5xl">
             LET'S CONNECT <span role="img" aria-label="sparkles">✨</span>
           </h1>
           <form className="mt-8 space-y-4">
@@ -64,14 +64,14 @@ const Contact = () => {
           </form>
         </div>
       </div>
-      <div className="w-full border-t border-gray-300 mt-8">
-        <div className="flex justify-between items-center pt-4 h-8">
-          <img src={footerLogo} alt="Footer Logo" className="h-12 mt-12 w-auto" />
-          <div className="text-custom-gray mt-12">
-            <a href="/TravisLeslie_UIUX_Designer.pdf" target="_blank" rel="noopener noreferrer" className="underline mx-4" style={{ textDecorationColor: '#FF7135', textUnderlineOffset: '8px' }}>Resume</a> / 
-            <a href="https://www.linkedin.com/in/travisdleslie" target="_blank" rel="noopener noreferrer" className="underline mx-4" style={{ textDecorationColor: '#FF7135', textUnderlineOffset: '8px' }}> LinkedIn</a> / 
-            <a href="#" className="underline mx-4" style={{ textDecorationColor: '#FF7135', textUnderlineOffset: '8px' }}> Dribble</a> / 
-            <a href="#" className="underline mx-4" style={{ textDecorationColor: '#FF7135', textUnderlineOffset: '8px' }}> Certifications</a>
+      <div className="w-full border-t border-gray-300 mt-8 px-4 md:px-16">
+        <div className="flex flex-col md:flex-row justify-between items-center pt-4">
+          <img src={footerLogo} alt="Footer Logo" className="h-12 w-auto" />
+          <div className="text-custom-gray mt-4 md:mt-0">
+            <a href="/TravisLeslie_UIUX_Designer.pdf" target="_blank" rel="noopener noreferrer" className="underline mx-2 md:mx-4" style={{ textDecorationColor: '#FF7135', textUnderlineOffset: '8px' }}>Resume</a> / 
+            <a href="https://www.linkedin.com/in/travisdleslie" target="_blank" rel="noopener noreferrer" className="underline mx-2 md:mx-4" style={{ textDecorationColor: '#FF7135', textUnderlineOffset: '8px' }}> LinkedIn</a> / 
+            <a href="#" className="underline mx-2 md:mx-4" style={{ textDecorationColor: '#FF7135', textUnderlineOffset: '8px' }}> Dribble</a> / 
+            <a href="#" className="underline mx-2 md:mx-4" style={{ textDecorationColor: '#FF7135', textUnderlineOffset: '8px' }}> Certifications</a>
           </div>
         </div>
       </div>
