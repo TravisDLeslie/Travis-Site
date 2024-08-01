@@ -10,7 +10,7 @@ import reactIcon from "../assets/icons/react.svg";
 const Menu = ({ isOpen, toggleMenu }) => {
   return (
     <CSSTransition in={isOpen} timeout={300} classNames="menu" unmountOnExit>
-      <div className="fixed inset-y-0 right-0 w-1/2 bg-white z-40 flex flex-col items-center justify-center">
+      <div className="fixed inset-y-0 right-0 w-full md:w-1/2 bg-white z-40 flex flex-col items-center justify-center">
         <button
           onClick={toggleMenu}
           className="absolute top-16 right-16 focus:outline-none"

@@ -24,14 +24,14 @@ const FixedRightSide = ({ toggleCertifications, scrollDirection, toggleMenu }) =
         </button>
       </div>
       <div className="text-center md:text-left">
-        <h1 className="text-custom-gray font-bold leading-none text-xl md:text-[100px]">
+        <h1 className="text-custom-gray font-bold leading-none text-3xl md:text-[100px]">
           <span className="md:inline">TRAVIS</span> <span className=" md:inline">LESLIE</span>
         </h1>
-        <p className="text-custom-gray font-medium mt-2 text-lg md:mt-8 md:text-5xl">UI/UX DESIGNER</p>
-        <p className="text-custom-gray font-regular mt-2 w-full text-base md:mt-8 md:w-[500px] md:text-lg">
+        <p className="text-custom-gray font-medium mt-4 text-2xl md:mt-8 md:text-5xl">UI/UX DESIGNER</p>
+        <p className="text-custom-gray font-regular mt-8 w-full text-base md:mt-8 md:w-[500px] md:text-lg">
           I’m a versatile UI/UX designer with a passion for designing beautiful, intuitive experiences with a positive impact on people and the business they represent. I have 5+ years of industry experience with user interactions & design.
         </p>
-        <div className="mt-4 md:mt-12">
+        <div className="mt-8 md:mt-12">
           <a 
             href="/TravisLeslie_UIUX_Designer.pdf" 
             target="_blank" 
@@ -65,7 +65,7 @@ const FixedRightSide = ({ toggleCertifications, scrollDirection, toggleMenu }) =
           </Link>
         </div>
       </div>
-      <div className="flex items-center justify-center md:items-start md:justify-start mt-4 md:mt-8">
+      <div className="flex items-center justify-center md:items-start md:justify-start mt-12 md:mt-8">
         <img src={scrolldown} alt="Scroll Down" className={`h-6 w-auto transform transition-transform ${scrollDirection === 'up' ? 'rotate-180' : ''}`} />
         <span className="ml-2 text-gray-500 uppercase text-sm md:text-base" style={{ color: '#979797' }}>
           {scrollDirection === 'up' ? 'Scroll Up' : 'Scroll Down'}
