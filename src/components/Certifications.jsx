@@ -71,7 +71,7 @@ const Certifications = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center space-x-8 md:space-x-16 mt-8 md:mt-20">
+        <div className="hidden md:flex justify-center space-x-8 md:space-x-16 mt-8 md:mt-20">
           <img src={figmaIcon} alt="Figma" className="w-16 h-16 md:w-20 md:h-20" />
           <img src={tailwindIcon} alt="TailwindCSS" className="w-24 h-20 md:w-28 md:h-24" />
           <img src={reactIcon} alt="React" className="w-16 h-16 md:w-20 md:h-20" />
