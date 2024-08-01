@@ -11,7 +11,7 @@ const ProjectItem = ({ project }) => {
           <img 
             src={project.image} 
             alt={project.title} 
-            className="w-full h-full object-cover rounded-t-xl md:rounded-xl" 
+            className="w-full h-full object-cover rounded-t-xl md:rounded-2xl" 
             style={{ objectPosition: project.imagePosition || 'center', zIndex: 2 }} 
           />
         </div>

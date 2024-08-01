@@ -32,37 +32,43 @@ const FixedRightSide = ({ toggleCertifications, scrollDirection, toggleMenu }) =
           I’m a versatile UI/UX designer with a passion for designing beautiful, intuitive experiences with a positive impact on people and the business they represent. I have 5+ years of industry experience with user interactions & design.
         </p>
         <div className="mt-8 w-full md:mt-12">
-          <a 
-            href="/TravisLeslie_UIUX_Designer.pdf" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="text-custom-gray underline mx-2 hover:font-medium" 
-            style={{ textDecorationColor: '#FF7135', textUnderlineOffset: '8px' }}
-          >
-            Resume
-          </a> / 
-          <a 
-            href="https://www.linkedin.com/in/travisdleslie" target="_blank"
-            className="text-custom-gray underline mx-2 hover:font-medium" 
-            style={{ textDecorationColor: '#FF7135', textUnderlineOffset: '8px' }}
-          >
-            LinkedIn
-          </a> / 
-          <a 
-            href="#" 
-            className="text-custom-gray underline mx-2 hover:font-medium" 
-            style={{ textDecorationColor: '#FF7135', textUnderlineOffset: '8px' }}
-          >
-            Dribbble
-          </a> / 
-          <Link 
-            to="/certifications"
-            className="text-custom-gray underline mx-2 hover:font-medium" 
-            style={{ textDecorationColor: '#FF7135', textUnderlineOffset: '8px' }} 
-            onClick={toggleCertifications}
-          >
-            Certifications
-          </Link>
+          <div className="flex justify-center flex-wrap md:justify-start">
+            <a 
+              href="/TravisLeslie_UIUX_Designer.pdf" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-custom-gray underline mx-2 hover:font-medium" 
+              style={{ textDecorationColor: '#FF7135', textUnderlineOffset: '8px' }}
+            >
+              Resume
+            </a> 
+            <span className="mx-2">/</span>
+            <a 
+              href="https://www.linkedin.com/in/travisdleslie" 
+              target="_blank"
+              className="text-custom-gray underline mx-2 hover:font-medium" 
+              style={{ textDecorationColor: '#FF7135', textUnderlineOffset: '8px' }}
+            >
+              LinkedIn
+            </a> 
+            <span className="mx-2">/</span>
+            <a 
+              href="#" 
+              className="text-custom-gray underline mx-2 hover:font-medium" 
+              style={{ textDecorationColor: '#FF7135', textUnderlineOffset: '8px' }}
+            >
+              Dribbble
+            </a> 
+            <span className="mx-2">/</span>
+            <Link 
+              to="/certifications"
+              className="text-custom-gray underline mx-2 hover:font-medium" 
+              style={{ textDecorationColor: '#FF7135', textUnderlineOffset: '8px' }} 
+              onClick={toggleCertifications}
+            >
+              Certifications
+            </Link>
+          </div>
         </div>
       </div>
       <div className="flex items-center justify-center md:items-start md:justify-start mt-12 md:mt-8">
