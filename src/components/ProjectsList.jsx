@@ -10,6 +10,7 @@ import port5 from '../assets/images/port5.png';
 import port6 from '../assets/images/port6.png';
 import port7 from '../assets/images/port7.png';
 import port8 from '../assets/images/port8.png';
+import port9 from '../assets/images/port9.png';
 import topo from '../assets/icons/topo.svg'; // Adjust the path if necessary
 
 const projects = [
@@ -19,7 +20,7 @@ const projects = [
     image: port1,
     imageBgColor: 'bg-custom-purple',
     imagePosition: 'center top',
-    link: '',
+    link: '/project/sunrise-thoughts-webapp-ui-ux',
   },
   {
     title: 'Web App',
@@ -27,7 +28,7 @@ const projects = [
     image: port2,
     imageBgColor: 'bg-teal-500',
     imagePosition: 'center top',
-    link: '',
+    link: '/project/scout-sip-application-ui-ux',
   },
   {
     title: 'Dashboard',
@@ -35,14 +36,14 @@ const projects = [
     image: port3,
     imageBgColor: 'bg-[#FF7135]',
     imagePosition: 'center top',
-    link: '/project/funky',
+    link: '/project/funky-scribbles-creative-community-ui-ux',
   },
   {
     title: 'Tesla IVI',
     description: 'Tesla • concept',
     image: port4,
     imageBgColor: 'bg-teal-500',
-    link: '',
+    link: '/project/tesla-ivi-redesign-concept-ui-ux',
   },
   {
     title: 'E-Commerce',
@@ -50,7 +51,7 @@ const projects = [
     image: port5,
     imageBgColor: 'bg-red-500',
     imagePosition: 'center top',
-    link: '',
+    link: '/project/43made-ecommerce-shopify-store-ui-ux',
   },
   {
     title: 'Marketplace',
@@ -58,7 +59,7 @@ const projects = [
     image: port6,
     imageBgColor: 'bg-green-700',
     imagePosition: 'center top',
-    link: '',
+    link: '/project/vegginout-marketplace-saas-ui-ux',
   },
   {
     title: 'Realestate App',
@@ -66,15 +67,23 @@ const projects = [
     image: port7,
     imageBgColor: 'bg-purple-400',
     magePosition: 'center top',
-    link: '',
+    link: '/project/revzn-realestate-saas-ui-ux',
   },
   {
-    title: 'E-Commerce Store',
+    title: 'Landing Page',
+    description: 'Art of Visuals • Landing Page',
+    image: port9,
+    imageBgColor: 'bg-[#1e1e1e]',
+    imagePosition: 'center top',
+    link: '/project/artofvisuals-saas-landing-page-ui-ux',
+  },
+  {
+    title: 'E-Commerce',
     description: 'Tamarack Threads • Shopify',
     image: port8,
-    imageBgColor: 'bg-[#848484]',
+    imageBgColor: 'bg-[#1e1e1e]',
     imagePosition: 'center top',
-    link: '',
+    link: '/project/tamarackthreads-shopify-ecommerce-ui-ux',
   },
   // Add more projects here
 ];
