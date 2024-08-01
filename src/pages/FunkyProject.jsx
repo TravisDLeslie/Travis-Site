@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/icons/logo.svg";
 import menuIcon from "../assets/icons/Menu.svg";
@@ -11,10 +11,10 @@ import port6 from "../assets/images/FS5.png";
 import port7 from "../assets/images/FS6.png";
 import port8 from "../assets/images/FS7.png";
 import Menu from "../components/Menu";
-import Footer from "../components/Footer"; // Import the Footer component
+import Footer from "../components/Footer";
 
 const FunkyProject = () => {
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -22,10 +22,7 @@ const FunkyProject = () => {
 
   return (
     <div className="bg-white">
-      <header
-        className="flex justify-between items-center px-24 py-12 bg-white"
-        style={{ paddingLeft: "150px", paddingRight: "150px" }}
-      >
+      <header className="flex justify-between items-center p-4 md:px-24 md:py-12 bg-white">
         <Link to="/">
           <img src={logo} alt="Logo" className="h-6 w-auto" />
         </Link>
@@ -33,28 +30,28 @@ const FunkyProject = () => {
           <img src={menuIcon} alt="Menu" className="h-6 w-auto" />
         </button>
       </header>
-      <div className="mb-8 mx-auto" style={{ width: "calc(100% - 200px)" }}>
+      <div className="mb-8 mx-auto w-full md:w-[calc(100%-200px)]">
         <img
           src={port1}
           alt="Tesla In-Vehicle Infotainment"
           className="w-full h-auto rounded-lg"
         />
       </div>
-      <main className="p-8 flex justify-center">
+      <main className="p-4 md:p-8 flex justify-center">
         <section className="w-full max-w-[900px]">
           <div className="mb-8">
-            <h2 className="text-sm font-medium text-custom-gray text-left">
+            <h2 className="text-xs md:text-sm font-medium text-custom-gray text-left">
               FUNKY • UX/UI DESIGN • DASHBOARD
             </h2>
-            <h1 className="mt-2 text-4xl font-medium text-custom-gray text-left">
+            <h1 className="mt-2 text-2xl md:text-4xl font-medium text-custom-gray text-left">
               Creative Community Dashboard
             </h1>
           </div>
           <div className="mt-12">
-            <h2 className="text-2xl text-custom-gray font-medium text-left">
+            <h2 className="text-xl md:text-2xl text-custom-gray font-medium text-left">
               Overview
             </h2>
-            <p className="mt-2 text-gray-700 leading-10 font-light text-left">
+            <p className="mt-2 text-sm md:text-base text-gray-700 leading-7 md:leading-10 font-light text-left">
               Funky Scribbles is a web application designed for a vibrant and
               creative community, providing a platform where users can select
               creative packs of their choice, engage in voting for the next
@@ -65,10 +62,10 @@ const FunkyProject = () => {
             </p>
           </div>
           <div className="mt-12">
-            <h2 className="text-2xl text-custom-gray font-medium text-left">
+            <h2 className="text-xl md:text-2xl text-custom-gray font-medium text-left">
               Purpose
             </h2>
-            <p className="mt-2 text-gray-700 leading-10 font-light text-left">
+            <p className="mt-2 text-sm md:text-base text-gray-700 leading-7 md:leading-10 font-light text-left">
               Funky Scribbles was created to empower artists and creative
               individuals by giving them access to a variety of creative packs,
               a say in the future offerings, and a structured way to manage
@@ -82,14 +79,16 @@ const FunkyProject = () => {
                 alt="Wireframe 2"
                 className="w-full h-auto rounded-lg mb-4"
               />
-              <p className="text-center text-custom-gray text-xs ">designed in figma</p>
+              <p className="text-center text-custom-gray text-xs">
+                designed in figma
+              </p>
             </div>
           </div>
           <div className="mt-6">
-            <h2 className="text-2xl mt-12 text-custom-gray font-medium text-left mb-4">
+            <h2 className="text-xl md:text-2xl text-custom-gray font-medium text-left mb-4">
               Key Features
             </h2>
-            <ol className="mt-2 text-custom-gray leading-10 text-left list-decimal pl-5">
+            <ol className="mt-2 text-sm md:text-base text-custom-gray leading-7 md:leading-10 text-left list-decimal pl-5">
               <li className="mb-4 font-medium">
                 Creative Pack Selection:
                 <ul className="list-disc font-light pl-5">
@@ -103,10 +102,10 @@ const FunkyProject = () => {
                   </li>
                 </ul>
               </li>
-              <li className="mb-4 text-custom-gray font-semibold">
+              <li className="mb-4 font-medium">
                 Voting System:
-                <ul className="list-disc font-light mt-4 pl-5">
-                  <li className="">
+                <ul className="list-disc font-light pl-5">
+                  <li>
                     The community can vote on which creative packs should be
                     added next, ensuring that the offerings align with the
                     users' preferences.
@@ -117,7 +116,7 @@ const FunkyProject = () => {
                   </li>
                 </ul>
               </li>
-              <li className="mb-4 font-semibold">
+              <li className="mb-4 font-medium">
                 Subscription Management:
                 <ul className="list-disc font-light pl-5">
                   <li>
@@ -131,7 +130,7 @@ const FunkyProject = () => {
                   </li>
                 </ul>
               </li>
-              <li className="mb-4 font-semibold">
+              <li className="mb-4 font-medium">
                 User Views:
                 <ul className="list-disc font-light pl-5">
                   <li>
@@ -146,7 +145,7 @@ const FunkyProject = () => {
                   </li>
                 </ul>
               </li>
-              <li className="mb-4 font-semibold">
+              <li className="mb-4 font-medium">
                 Community Interaction:
                 <ul className="list-disc font-light pl-5">
                   <li>
@@ -160,91 +159,97 @@ const FunkyProject = () => {
                   </li>
                 </ul>
               </li>
-              <div className="mt-6">
-                <h2 className="text-2xl mt-12 text-custom-gray font-medium text-left mb-4">
-                  Benefits for Users:
-                </h2>
-                <ol className="mt-2 text-custom-gray leading-10 text-left list-decimal pl-5">
-                  <li className="mb-4 font-medium">
-                    Artists and Creatives:
-                    <ul className="list-disc font-light pl-5">
-                      <li>
-                        Gain access to a diverse range of high-quality creative
-                        packs.
-                      </li>
-                      <li>Influence future content through voting.</li>
-                      <li>
-                        Enjoy a tailored experience based on their subscription
-                        level.
-                      </li>
-                    </ul>
+            </ol>
+          </div>
+          <div className="mt-6">
+            <h2 className="text-xl md:text-2xl text-custom-gray font-medium text-left mb-4">
+              Benefits for Users
+            </h2>
+            <ol className="mt-2 text-sm md:text-base text-custom-gray leading-7 md:leading-10 text-left list-decimal pl-5">
+              <li className="mb-4 font-medium">
+                Artists and Creatives:
+                <ul className="list-disc font-light pl-5">
+                  <li>
+                    Gain access to a diverse range of high-quality creative
+                    packs.
                   </li>
-                  <li className="mb-4 font-medium">
-                    Content Creators:
-                    <ul className="list-disc font-light pl-5">
-                      <li>
-                        Increase visibility and engagement by showcasing their
-                        packs to an active community.
-                      </li>
-                      <li>
-                        Receive feedback and insights from users to improve
-                        their offerings.
-                      </li>
-                    </ul>
+                  <li>Influence future content through voting.</li>
+                  <li>
+                    Enjoy a tailored experience based on their subscription
+                    level.
                   </li>
-                </ol>
-                <div className="mt-12 flex flex-col items-center">
+                </ul>
+              </li>
+              <li className="mb-4 font-medium">
+                Content Creators:
+                <ul className="list-disc font-light pl-5">
+                  <li>
+                    Increase visibility and engagement by showcasing their packs
+                    to an active community.
+                  </li>
+                  <li>
+                    Receive feedback and insights from users to improve their
+                    offerings.
+                  </li>
+                </ul>
+              </li>
+            </ol>
+            <div className="mt-12 flex flex-col items-center">
               <img
                 src={port6}
                 alt="Wireframe 2"
                 className="w-full h-auto rounded-lg mb-4"
               />
-              <p className="text-center text-custom-gray text-xs ">designed in figma</p>
+              <p className="text-center text-custom-gray text-xs">
+                designed in figma
+              </p>
             </div>
-                <div className="mt-12">
-                  <h2 className="text-2xl text-custom-gray font-medium text-left">
-                    Project Scope and Timeline:
-                  </h2>
-                  <p className="mt-2 text-custom-gray leading-10 font-light text-left">
-                    The development of Funky Scribbles spanned 6-8 weeks and
-                    involved extensive research, user testing, and iterative
-                    design to ensure the platform meets the needs of the
-                    creative community. Final files were delivered in
-                    collaboration via Figma, featuring a clean file structure
-                    ready for development handoff.
-                  </p>
-                  <div className="mt-12 flex flex-col items-center">
-              <img
-                src={port7}
-                alt="Wireframe 2"
-                className="w-full h-auto rounded-lg mb-4"
-              />
-              <p className="text-center text-custom-gray text-xs ">designed in figma</p>
-            </div>
-                </div>
-                <div className="mt-12">
-                  <h2 className="text-2xl text-custom-gray font-medium text-left">
-                    Conclusion:
-                  </h2>
-                  <p className="mt-2 text-custom-gray leading-10 font-light text-left">
-                    Funky Scribbles is more than just a web application; it's a
-                    creative hub that brings artists and creatives together,
-                    offering them the tools and community they need to thrive.
-                    By focusing on user engagement, subscription management, and
-                    community interaction, Funky Scribbles stands out as an
-                    inclusive and fun platform for creative expression.
-                  </p>
-                  <div className="mt-12 flex flex-col items-center">
-              <img
-                src={port5}
-                alt="Wireframe 2"
-                className="w-full h-auto rounded-lg mb-4"
-              />
-              <p className="text-center text-custom-gray text-xs ">designed in figma</p>
-            </div>
-                </div>
+            <div className="mt-12">
+              <h2 className="text-xl md:text-2xl text-custom-gray font-medium text-left">
+                Project Scope and Timeline
+              </h2>
+              <p className="mt-2 text-sm md:text-base text-custom-gray leading-7 md:leading-10 font-light text-left">
+                The development of Funky Scribbles spanned 6-8 weeks and
+                involved extensive research, user testing, and iterative design
+                to ensure the platform meets the needs of the creative
+                community. Final files were delivered in collaboration via
+                Figma, featuring a clean file structure ready for development
+                handoff.
+              </p>
+              <div className="mt-12 flex flex-col items-center">
+                <img
+                  src={port7}
+                  alt="Wireframe 2"
+                  className="w-full h-auto rounded-lg mb-4"
+                />
+                <p className="text-center text-custom-gray text-xs">
+                  designed in figma
+                </p>
               </div>
-            </ol>
+            </div>
+            <div className="mt-12">
+              <h2 className="text-xl md:text-2xl text-custom-gray font-medium text-left">
+                Conclusion
+              </h2>
+              <p className="mt-2 text-sm md:text-base text-custom-gray leading-7 md:leading-10 font-light text-left">
+                Funky Scribbles is more than just a web application; it's a
+                creative hub that brings artists and creatives together,
+                offering them the tools and community they need to thrive. By
+                focusing on user engagement, subscription management, and
+                community interaction, Funky Scribbles stands out as an
+                inclusive and fun platform for creative expression.
+              </p>
+              <div className="mt-12 flex flex-col items-center">
+                <img
+                  src={port5}
+                  alt="Wireframe 2"
+                  className="w-full h-auto rounded-lg mb-4"
+                />
+                <p className="text-center text-custom-gray text-xs">
+                  designed in figma
+                </p>
+              </div>
+            </div>
           </div>
         </section>
       </main>

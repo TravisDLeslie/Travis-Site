@@ -14,7 +14,7 @@ const FixedRightSide = ({ toggleCertifications, scrollDirection, toggleMenu }) =
   };
 
   return (
-    <div className="md:fixed md:bottom-0 md: right-0 w-full h-full bg-white p-4 flex flex-col md:justify-between z-30 md:relative md:h-full md:w-full md:p-16">
+    <div className="md:fixed md:bottom-0 md:right-0 w-full h-full bg-white p-4 flex flex-col md:justify-between z-30 md:relative md:h-full md:w-full md:p-16">
       <div className="hidden md:flex justify-between items-center">
         <Link to="/">
           <img src={logo} alt="Logo" className="h-6 w-auto" />
@@ -25,13 +25,13 @@ const FixedRightSide = ({ toggleCertifications, scrollDirection, toggleMenu }) =
       </div>
       <div className="text-center md:text-left">
         <h1 className="text-custom-gray font-bold leading-none text-3xl md:text-[100px]">
-          <span className="md:inline">TRAVIS</span> <span className=" md:inline">LESLIE</span>
+          <span className="inline md:block">TRAVIS</span> <span className="inline md:block">LESLIE</span>
         </h1>
         <p className="text-custom-gray font-medium mt-4 text-2xl md:mt-8 md:text-5xl">UI/UX DESIGNER</p>
         <p className="text-custom-gray font-regular mt-8 w-full text-base md:mt-8 md:w-[500px] md:text-lg">
           I’m a versatile UI/UX designer with a passion for designing beautiful, intuitive experiences with a positive impact on people and the business they represent. I have 5+ years of industry experience with user interactions & design.
         </p>
-        <div className="mt-8 md:mt-12">
+        <div className="mt-8 w-full md:mt-12">
           <a 
             href="/TravisLeslie_UIUX_Designer.pdf" 
             target="_blank" 
