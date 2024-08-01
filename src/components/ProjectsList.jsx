@@ -1,3 +1,4 @@
+// src/components/ProjectsList.jsx
 import React from 'react';
 import ProjectItem from './ProjectItem';
 import { Link } from 'react-router-dom';
@@ -17,30 +18,30 @@ const projects = [
     description: 'Sunrise Thoughts • Inspiration',
     image: port1,
     imageBgColor: 'bg-custom-purple',
-    imagePosition: 'center top', // Move image to the top
+    imagePosition: 'center top',
     link: '',
   },
   {
     title: 'Web App',
     description: 'Scout & Sip • SAAS',
     image: port2,
-    imageBgColor: 'bg-teal-500', // Example background color for another project
-    imagePosition: 'center top', // Move image to the top
+    imageBgColor: 'bg-teal-500',
+    imagePosition: 'center top',
     link: '',
   },
   {
     title: 'Dashboard',
     description: 'Funky Scribbles • SAAS',
     image: port3,
-    imageBgColor: 'bg-[#FF7135]', // Example background color for another project
-    imagePosition: 'center top', // Move image to the top
+    imageBgColor: 'bg-[#FF7135]',
+    imagePosition: 'center top',
     link: '/project/funky',
   },
   {
     title: 'Tesla IVI',
     description: 'Tesla • concept',
     image: port4,
-    imageBgColor: 'bg-teal-500', // Example background color for another project
+    imageBgColor: 'bg-teal-500',
     link: '',
   },
   {
@@ -48,7 +49,7 @@ const projects = [
     description: '43Made • Shopify',
     image: port5,
     imageBgColor: 'bg-red-500',
-    imagePosition: 'center top', // Example background color for another project
+    imagePosition: 'center top',
     link: '',
   },
   {
@@ -56,7 +57,7 @@ const projects = [
     description: 'Veggin Out • saas',
     image: port6,
     imageBgColor: 'bg-green-700',
-    imagePosition: 'center top', // Example background color for another project
+    imagePosition: 'center top',
     link: '',
   },
   {
@@ -64,7 +65,7 @@ const projects = [
     description: 'Real Estate App • SAAS',
     image: port7,
     imageBgColor: 'bg-purple-400',
-    magePosition: 'center top', // Example background color for another project
+    magePosition: 'center top',
     link: '',
   },
   {
@@ -72,7 +73,7 @@ const projects = [
     description: 'Tamarack Threads • Shopify',
     image: port8,
     imageBgColor: 'bg-[#848484]',
-    imagePosition: 'center top', // Example background color for another project
+    imagePosition: 'center top',
     link: '',
   },
   // Add more projects here
@@ -91,18 +92,18 @@ const ProjectsList = ({ scrollRef, setScrollDirection }) => {
   return (
     <div
       ref={scrollRef}
-      className="w-1/2 h-full overflow-y-scroll relative overflow-y-scroll snap-y snap-mandatory"
+      className="w-full h-full md:w-full md:h-full overflow-y-scroll relative snap-y snap-mandatory scrollbar-hide"
       onScroll={handleScroll}
     >
-      <div className="fixed inset-0 bg-custom-gray z-0">
+      <div className="fixed inset-0 bg-custom-gray z-0 hidden md:block">
         <div
           className="absolute inset-0 bg-cover bg-center opacity-25"
           style={{ backgroundImage: `url(${topo})` }}
         ></div>
       </div>
-      <div className="relative z-10">
+      <div className="relative z-10 space-y-8 p-4 md:space-y-0 md:p-0">
         {projects.map((project, index) => (
-          <div key={index} className="snap-start h-screen flex items-center justify-center">
+          <div key={index} className="snap-start h-auto md:h-screen flex items-center justify-center mb-8 md:mb-0">
             <Link to={project.link}>
               <ProjectItem project={project} />
             </Link>

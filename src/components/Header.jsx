@@ -6,7 +6,7 @@ import menuIcon from '../assets/icons/Menu.svg';
 
 const Header = ({ toggleMenu }) => {
   return (
-    <div className="flex justify-between items-center p-8 bg-white">
+    <div className="flex justify-between items-center p-4 bg-white w-full md:hidden">
       <Link to="/">
         <img src={logo} alt="Logo" className="h-6 w-auto" />
       </Link>
