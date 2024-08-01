@@ -32,12 +32,12 @@ const FixedRightSide = ({ toggleCertifications, scrollDirection, toggleMenu }) =
           I’m a versatile UI/UX designer with a passion for designing beautiful, intuitive experiences with a positive impact on people and the business they represent. I have 5+ years of industry experience with user interactions & design.
         </p>
         <div className="mt-8 w-full md:mt-12">
-          <div className="flex justify-center flex-wrap md:justify-start">
+          <div className="flex justify-center flex-wrap md:justify-start whitespace-nowrap">
             <a 
               href="/TravisLeslie_UIUX_Designer.pdf" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="text-custom-gray underline mx-2 hover:font-medium" 
+              className="text-custom-gray underline mx-1 md:mx-2 hover:font-medium" 
               style={{ textDecorationColor: '#FF7135', textUnderlineOffset: '8px' }}
             >
               Resume
@@ -46,7 +46,7 @@ const FixedRightSide = ({ toggleCertifications, scrollDirection, toggleMenu }) =
             <a 
               href="https://www.linkedin.com/in/travisdleslie" 
               target="_blank"
-              className="text-custom-gray underline mx-2 hover:font-medium" 
+              className="text-custom-gray underline mx-1 md:mx-2 hover:font-medium" 
               style={{ textDecorationColor: '#FF7135', textUnderlineOffset: '8px' }}
             >
               LinkedIn
@@ -54,7 +54,7 @@ const FixedRightSide = ({ toggleCertifications, scrollDirection, toggleMenu }) =
             <span className="mx-2">/</span>
             <a 
               href="#" 
-              className="text-custom-gray underline mx-2 hover:font-medium" 
+              className="text-custom-gray underline mx-1 md:mx-2 hover:font-medium" 
               style={{ textDecorationColor: '#FF7135', textUnderlineOffset: '8px' }}
             >
               Dribbble
@@ -62,7 +62,7 @@ const FixedRightSide = ({ toggleCertifications, scrollDirection, toggleMenu }) =
             <span className="mx-2">/</span>
             <Link 
               to="/certifications"
-              className="text-custom-gray underline mx-2 hover:font-medium" 
+              className="text-custom-gray underline mx-1 md:mx-2 hover:font-medium" 
               style={{ textDecorationColor: '#FF7135', textUnderlineOffset: '8px' }} 
               onClick={toggleCertifications}
             >

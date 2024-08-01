@@ -1,4 +1,3 @@
-// src/components/Menu.jsx
 import React from "react";
 import { CSSTransition } from "react-transition-group";
 import { Link } from "react-router-dom";
@@ -62,7 +61,7 @@ const Menu = ({ isOpen, toggleMenu }) => {
             Dribbble
           </a>
         </nav>
-        <div className="absolute bottom-8 flex space-x-4">
+        <div className="absolute bottom-8 flex space-x-4 hidden md:flex">
           <img src={figmaIcon} alt="Figma" className="w-20 h-20" />
           <img src={tailwindIcon} alt="TailwindCSS" className="w-20 h-20" />
           <img src={reactIcon} alt="React" className="w-20 h-20" />
