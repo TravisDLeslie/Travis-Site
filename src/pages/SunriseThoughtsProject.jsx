@@ -3,13 +3,9 @@ import { Link } from "react-router-dom";
 import logo from "../assets/icons/logo.svg";
 import menuIcon from "../assets/icons/Menu.svg";
 import hero from "../assets/images/SunriseHero.png";
-import port2 from "../assets/images/FS1.png";
-import port3 from "../assets/images/FS2.png";
-import port4 from "../assets/images/FS3.png";
-import port5 from "../assets/images/FS4.png";
-import port6 from "../assets/images/FS5.png";
-import port7 from "../assets/images/FS6.png";
-import port8 from "../assets/images/FS7.png";
+import stport1 from "../assets/images/stport1.png";
+import stport2 from "../assets/images/stport2.png";
+import figmaIcon from "../assets/icons/figmaicon.svg"; // Import Figma icon
 import Menu from "../components/Menu";
 import Footer from "../components/Footer";
 
@@ -41,10 +37,10 @@ const SunriseThoughtsProject = () => {
         <section className="w-full max-w-[900px]">
           <div className="mb-8">
             <h2 className="text-xs md:text-sm font-medium text-custom-gray text-left">
-              FUNKY • UX/UI DESIGN • DASHBOARD
+              SUNRISE THOUGHTS • UX/UI DESIGN • SIMPLE APP
             </h2>
             <h1 className="mt-2 text-2xl md:text-4xl font-medium text-custom-gray text-left">
-              Creative Community Dashboard
+              Inspirational Web App
             </h1>
           </div>
           <div className="mt-12">
@@ -52,13 +48,7 @@ const SunriseThoughtsProject = () => {
               Overview
             </h2>
             <p className="mt-2 text-sm md:text-base text-gray-700 leading-7 md:leading-10 font-light text-left">
-              Funky Scribbles is a web application designed for a vibrant and
-              creative community, providing a platform where users can select
-              creative packs of their choice, engage in voting for the next
-              pack, handle subscriptions, and enjoy different views based on
-              their subscription status. This project aims to foster creativity
-              and engagement while offering a seamless and enjoyable user
-              experience.
+            Sunrise Thoughts is a single-page web application designed to provide daily inspiration and motivation for individuals seeking to enhance their lives. The application is built to be a quick, engaging, and colorful experience, allowing users to absorb all content in just five minutes and encouraging them to return for fresh insights each day.
             </p>
           </div>
           <div className="mt-12">
@@ -66,22 +56,23 @@ const SunriseThoughtsProject = () => {
               Purpose
             </h2>
             <p className="mt-2 text-sm md:text-base text-gray-700 leading-7 md:leading-10 font-light text-left">
-              Funky Scribbles was created to empower artists and creative
-              individuals by giving them access to a variety of creative packs,
-              a say in the future offerings, and a structured way to manage
-              their subscriptions. Unlike other platforms, Funky Scribbles
-              focuses on community-driven content and interaction, ensuring that
-              every user feels valued and heard.
+            The primary aim of Sunrise Thoughts is to offer a daily dose of inspiration through a "daily thought," which is a short, simple read containing actionable insights. The platform also includes a newsletter signup feature, allowing users to receive inspiration and motivational content directly in their inbox.
             </p>
             <div className="mt-12 flex flex-col items-center">
               <img
-                src={port8}
+                src={stport1}
                 alt="Wireframe 2"
                 className="w-full h-auto rounded-lg mb-4"
               />
-              <p className="text-center text-custom-gray text-xs">
-                designed in figma
-              </p>
+              <div className="flex items-center justify-center">
+                <p className="text-center text-custom-gray text-xs mr-2">
+                  designed in
+                </p>
+                <img src={figmaIcon} alt="Figma" className="h-4 w-4" />
+                <p className="text-center text-custom-gray font-medium text-xs mr-2">
+                  figma
+                </p>
+              </div>
             </div>
           </div>
           <div className="mt-6">
@@ -90,72 +81,46 @@ const SunriseThoughtsProject = () => {
             </h2>
             <ol className="mt-2 text-sm md:text-base text-custom-gray leading-7 md:leading-10 text-left list-decimal pl-5">
               <li className="mb-4 font-medium">
-                Creative Pack Selection:
+                Daily Thought:
                 <ul className="list-disc font-light pl-5">
                   <li>
-                    Users can browse and select from a wide range of creative
-                    packs tailored to various artistic needs and interests.
+                  A concise and impactful message designed to inspire and motivate users.
                   </li>
                   <li>
-                    Each pack includes a detailed description, preview images,
-                    and user ratings to help users make informed decisions.
+                  Each daily thought includes actionable insights that users can implement in their daily lives.
                   </li>
                 </ul>
               </li>
               <li className="mb-4 font-medium">
-                Voting System:
+              Colorful and Engaging Design:
                 <ul className="list-disc font-light pl-5">
                   <li>
-                    The community can vote on which creative packs should be
-                    added next, ensuring that the offerings align with the
-                    users' preferences.
+                  The application features a vibrant and visually appealing design, making it a delightful experience for users.
                   </li>
                   <li>
-                    Regular voting events keep the community engaged and excited
-                    about new content.
+                  The user interface is intuitive and easy to navigate, ensuring a seamless user experience.
                   </li>
                 </ul>
               </li>
               <li className="mb-4 font-medium">
-                Subscription Management:
+              Quick Content Consumption:
                 <ul className="list-disc font-light pl-5">
                   <li>
-                    Users can easily manage their subscriptions, with options to
-                    subscribe to different tiers that offer various benefits and
-                    access levels.
+                  Users can view all the content within five minutes, making it perfect for a quick motivational boost at the start of their day.
                   </li>
                   <li>
-                    The subscription system includes automated reminders for
-                    renewals and special offers for long-term subscribers.
+                  The application encourages users to check back daily for new and updated content.
                   </li>
                 </ul>
               </li>
               <li className="mb-4 font-medium">
-                User Views:
+              Newsletter Signup:
                 <ul className="list-disc font-light pl-5">
                   <li>
-                    Subscribed users enjoy an enhanced experience with exclusive
-                    content, early access to new packs, and additional
-                    customization options.
+                  Users can subscribe to a newsletter to receive daily inspiration and motivation directly to their inbox.
                   </li>
                   <li>
-                    Non-subscribed users have access to basic features and a
-                    limited selection of packs, encouraging them to upgrade for
-                    a fuller experience.
-                  </li>
-                </ul>
-              </li>
-              <li className="mb-4 font-medium">
-                Community Interaction:
-                <ul className="list-disc font-light pl-5">
-                  <li>
-                    Funky Scribbles fosters a sense of community by allowing
-                    users to create profiles, follow their favorite artists, and
-                    participate in discussions.
-                  </li>
-                  <li>
-                    Interest groups and messaging features enable users to
-                    connect, collaborate, and share their work.
+                  The signup process is simple and user-friendly, encouraging more users to stay connected.
                   </li>
                 </ul>
               </li>
@@ -167,49 +132,49 @@ const SunriseThoughtsProject = () => {
             </h2>
             <ol className="mt-2 text-sm md:text-base text-custom-gray leading-7 md:leading-10 text-left list-decimal pl-5">
               <li className="mb-4 font-medium">
-                Artists and Creatives:
+              Inspiration on the Go:
                 <ul className="list-disc font-light pl-5">
                   <li>
-                    Gain access to a diverse range of high-quality creative
-                    packs.
+                  Access quick and meaningful content that fits seamlessly into a busy lifestyle.
                   </li>
-                  <li>Influence future content through voting.</li>
-                  <li>
-                    Enjoy a tailored experience based on their subscription
-                    level.
+                  <li>Gain daily motivation and actionable insights to enhance personal growth and productivity.
                   </li>
                 </ul>
               </li>
               <li className="mb-4 font-medium">
-                Content Creators:
+              Consistent Engagement:
                 <ul className="list-disc font-light pl-5">
                   <li>
-                    Increase visibility and engagement by showcasing their packs
-                    to an active community.
+                  Daily updates keep users engaged and encourage regular visits to the platform.
                   </li>
                   <li>
-                    Receive feedback and insights from users to improve their
-                    offerings.
+                  The newsletter ensures users receive inspiration even when they're not actively browsing the web app.
                   </li>
                 </ul>
               </li>
             </ol>
             <div className="mt-12 flex flex-col items-center">
               <img
-                src={port6}
+                src={stport2}
                 alt="Wireframe 2"
                 className="w-full h-auto rounded-lg mb-4"
               />
-              <p className="text-center text-custom-gray text-xs">
-                designed in figma
-              </p>
+              <div className="flex items-center justify-center">
+                <p className="text-center text-custom-gray text-xs mr-2">
+                  designed in
+                </p>
+                <img src={figmaIcon} alt="Figma" className="h-4 w-4" />
+                <p className="text-center text-custom-gray font-medium text-xs mr-2">
+                  figma
+                </p>
+              </div>
             </div>
             <div className="mt-12">
               <h2 className="text-xl md:text-2xl text-custom-gray font-medium text-left">
                 Project Scope and Timeline
               </h2>
               <p className="mt-2 text-sm md:text-base text-custom-gray leading-7 md:leading-10 font-light text-left">
-                The development of Funky Scribbles spanned 6-8 weeks and
+                The design process of Sunrise thoughts spanned 6-8 weeks and
                 involved extensive research, user testing, and iterative design
                 to ensure the platform meets the needs of the creative
                 community. Final files were delivered in collaboration via
@@ -218,13 +183,19 @@ const SunriseThoughtsProject = () => {
               </p>
               <div className="mt-12 flex flex-col items-center">
                 <img
-                  src={port7}
+                  src={stport1}
                   alt="Wireframe 2"
                   className="w-full h-auto rounded-lg mb-4"
                 />
-                <p className="text-center text-custom-gray text-xs">
-                  designed in figma
+                <div className="flex items-center justify-center">
+                <p className="text-center text-custom-gray text-xs mr-2">
+                  designed in
                 </p>
+                <img src={figmaIcon} alt="Figma" className="h-4 w-4" />
+                <p className="text-center text-custom-gray font-medium text-xs mr-2">
+                  figma
+                </p>
+              </div>
               </div>
             </div>
             <div className="mt-12">
@@ -232,22 +203,23 @@ const SunriseThoughtsProject = () => {
                 Conclusion
               </h2>
               <p className="mt-2 text-sm md:text-base text-custom-gray leading-7 md:leading-10 font-light text-left">
-                Funky Scribbles is more than just a web application; it's a
-                creative hub that brings artists and creatives together,
-                offering them the tools and community they need to thrive. By
-                focusing on user engagement, subscription management, and
-                community interaction, Funky Scribbles stands out as an
-                inclusive and fun platform for creative expression.
+              Sunrise Thoughts is more than just an application; it's a daily companion that offers users a moment of reflection and motivation. By focusing on quick, impactful content and a vibrant design, Sunrise Thoughts provides an enjoyable and meaningful experience that users can look forward to each day.
               </p>
               <div className="mt-12 flex flex-col items-center">
                 <img
-                  src={port5}
+                  src={stport2}
                   alt="Wireframe 2"
                   className="w-full h-auto rounded-lg mb-4"
                 />
-                <p className="text-center text-custom-gray text-xs">
-                  designed in figma
+                <div className="flex items-center justify-center">
+                <p className="text-center text-custom-gray text-xs mr-2">
+                  designed in
                 </p>
+                <img src={figmaIcon} alt="Figma" className="h-4 w-4" />
+                <p className="text-center text-custom-gray font-medium text-xs mr-2">
+                  figma
+                </p>
+              </div>
               </div>
             </div>
           </div>

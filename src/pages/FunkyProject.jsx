@@ -12,6 +12,7 @@ import port7 from "../assets/images/FS6.png";
 import port8 from "../assets/images/FS7.png";
 import Menu from "../components/Menu";
 import Footer from "../components/Footer";
+import figmaIcon from "../assets/icons/figmaicon.svg";
 
 const FunkyProject = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -79,8 +80,14 @@ const FunkyProject = () => {
                 alt="Wireframe 2"
                 className="w-full h-auto rounded-lg mb-4"
               />
-              <p className="text-center text-custom-gray text-xs">
-                designed in figma
+            </div>
+            <div className="flex items-center justify-center">
+              <p className="text-center text-custom-gray text-xs mr-2">
+                designed in
+              </p>
+              <img src={figmaIcon} alt="Figma" className="h-4 w-4" />
+              <p className="text-center text-custom-gray font-medium text-xs mr-2">
+                figma
               </p>
             </div>
           </div>
@@ -200,8 +207,14 @@ const FunkyProject = () => {
                 alt="Wireframe 2"
                 className="w-full h-auto rounded-lg mb-4"
               />
-              <p className="text-center text-custom-gray text-xs">
-                designed in figma
+            </div>
+            <div className="flex items-center justify-center">
+              <p className="text-center text-custom-gray text-xs mr-2">
+                designed in
+              </p>
+              <img src={figmaIcon} alt="Figma" className="h-4 w-4" />
+              <p className="text-center text-custom-gray font-medium text-xs mr-2">
+                figma
               </p>
             </div>
             <div className="mt-12">
@@ -222,8 +235,14 @@ const FunkyProject = () => {
                   alt="Wireframe 2"
                   className="w-full h-auto rounded-lg mb-4"
                 />
-                <p className="text-center text-custom-gray text-xs">
-                  designed in figma
+              </div>
+              <div className="flex items-center justify-center">
+                <p className="text-center text-custom-gray text-xs mr-2">
+                  designed in
+                </p>
+                <img src={figmaIcon} alt="Figma" className="h-4 w-4" />
+                <p className="text-center text-custom-gray font-medium text-xs mr-2">
+                  figma
                 </p>
               </div>
             </div>
@@ -245,8 +264,14 @@ const FunkyProject = () => {
                   alt="Wireframe 2"
                   className="w-full h-auto rounded-lg mb-4"
                 />
-                <p className="text-center text-custom-gray text-xs">
-                  designed in figma
+              </div>
+              <div className="flex items-center justify-center">
+                <p className="text-center text-custom-gray text-xs mr-2">
+                  designed in
+                </p>
+                <img src={figmaIcon} alt="Figma" className="h-4 w-4" />
+                <p className="text-center text-custom-gray font-medium text-xs mr-2">
+                  figma
                 </p>
               </div>
             </div>

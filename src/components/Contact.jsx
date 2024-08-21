@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import closeIcon from '../assets/icons/close.svg';
 import logo from '../assets/icons/logo.svg';
 import footerLogo from '../assets/icons/footerlogo.svg';
+import Footer from './Footer';
 
 const Contact = () => {
   const navigate = useNavigate();
@@ -21,9 +22,12 @@ const Contact = () => {
       </div>
       <div className="flex justify-center w-full mt-8 px-4 md:px-0">
         <div className="max-w-[700px] w-full">
-          <h1 className="text-custom-gray font-bold leading-none text-3xl md:text-5xl">
+          <h1 className="text-custom-gray font-bold leading-none text-3xl md:text-5xl mb-4">
             LET'S CONNECT <span role="img" aria-label="sparkles">✨</span>
           </h1>
+          <h1 className="text-gray-500 font-normal mb-2">Quick Contact</h1>
+          <p className="text-custom-gray font-bold">hello@travisleslie.com</p>
+          <p className="text-custom-gray font-bold">208.284.6163</p>
           <form className="mt-8 space-y-4">
             <div>
               <input 
@@ -64,16 +68,8 @@ const Contact = () => {
           </form>
         </div>
       </div>
-      <div className="w-full border-t border-gray-300 mt-8 px-4 md:px-16">
-        <div className="flex flex-col md:flex-row justify-between items-center pt-4">
-          <img src={footerLogo} alt="Footer Logo" className="h-12 w-auto" />
-          <div className="text-custom-gray mt-4 md:mt-0">
-            <a href="/TravisLeslie_UIUX_Designer.pdf" target="_blank" rel="noopener noreferrer" className="underline mx-2 md:mx-4" style={{ textDecorationColor: '#FF7135', textUnderlineOffset: '8px' }}>Resume</a> / 
-            <a href="https://www.linkedin.com/in/travisdleslie" target="_blank" rel="noopener noreferrer" className="underline mx-2 md:mx-4" style={{ textDecorationColor: '#FF7135', textUnderlineOffset: '8px' }}> LinkedIn</a> / 
-            <a href="#" className="underline mx-2 md:mx-4" style={{ textDecorationColor: '#FF7135', textUnderlineOffset: '8px' }}> Dribble</a> / 
-            <a href="#" className="underline mx-2 md:mx-4" style={{ textDecorationColor: '#FF7135', textUnderlineOffset: '8px' }}> Certifications</a>
-          </div>
-        </div>
+      <div className="mt-8 md:mt-8">
+        <Footer />
       </div>
     </div>
   );
