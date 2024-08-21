@@ -6,7 +6,7 @@ const ProjectItem = ({ project }) => {
 
   return (
     <div className="project-item flex flex-col justify-center items-center transition-transform duration-300 ease-in-out transform hover:scale-95 hover:-rotate-3 w-full max-w-screen-sm md:w-full p-4 md:p-0">
-      <div className="w-full flex justify-center relative rounded-b-lg flex-grow" style={{ height: 'auto', maxHeight: '750px' }}>
+      <div className="w-full flex justify-center relative rounded-b-lg flex-grow" style={{ height: 'auto', maxHeight: '700px' }}>
         <div className={`w-full flex justify-center ${project.imageBgColor} rounded-t-3xl`}>
           <img 
             src={project.image} 
