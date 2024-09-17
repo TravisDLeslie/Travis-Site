@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 import logo from "../assets/icons/logo.svg";
 import menuIcon from "../assets/icons/Menu.svg";
 import hero from "../assets/images/ScoutHero.png";
-import port2 from "../assets/images/FS1.png";
-import port3 from "../assets/images/FS2.png";
-import port4 from "../assets/images/FS3.png";
-import port5 from "../assets/images/FS4.png";
-import port6 from "../assets/images/FS5.png";
-import port7 from "../assets/images/FS6.png";
-import port8 from "../assets/images/FS7.png";
+import port2 from "../assets/images/SS-1.png";
+import port3 from "../assets/images/SS-2.png";
+import port4 from "../assets/images/SS-2.png";
+import port5 from "../assets/images/SS-4.png";
+import port6 from "../assets/images/SS-3.png";
+import port7 from "../assets/images/SS-2.png";
+import port8 from "../assets/images/SS-1.png";
 import Menu from "../components/Menu";
 import Footer from "../components/Footer";
 
@@ -24,7 +24,7 @@ const ScoutSipProject = () => {
     <div className="bg-white">
       <header className="flex justify-between items-center p-4 md:px-24 md:py-12 bg-white">
         <Link to="/">
-          <img src={logo} alt="Logo" className="h-6 w-auto" />
+          <img src={logo} alt="Scout & Sip Logo" className="h-6 w-auto" />
         </Link>
         <button onClick={toggleMenu} className="focus:outline-none">
           <img src={menuIcon} alt="Menu" className="h-6 w-auto" />
@@ -33,7 +33,7 @@ const ScoutSipProject = () => {
       <div className="mb-8 mx-auto w-full md:w-[calc(100%-200px)]">
         <img
           src={hero}
-          alt="Tesla In-Vehicle Infotainment"
+          alt="Scout & Sip Hero"
           className="w-full h-auto rounded-lg"
         />
       </div>
@@ -41,10 +41,10 @@ const ScoutSipProject = () => {
         <section className="w-full max-w-[900px]">
           <div className="mb-8">
             <h2 className="text-xs md:text-sm font-medium text-custom-gray text-left">
-              FUNKY • UX/UI DESIGN • DASHBOARD
+              SCOUT & SIP • UX/UI DESIGN • PLATFORM
             </h2>
             <h1 className="mt-2 text-2xl md:text-4xl font-medium text-custom-gray text-left">
-              Creative Community Dashboard
+              Scout & Sip: Your Ultimate Happy Hour Finder
             </h1>
           </div>
           <div className="mt-12">
@@ -52,13 +52,7 @@ const ScoutSipProject = () => {
               Overview
             </h2>
             <p className="mt-2 text-sm md:text-base text-gray-700 leading-7 md:leading-10 font-light text-left">
-              Funky Scribbles is a web application designed for a vibrant and
-              creative community, providing a platform where users can select
-              creative packs of their choice, engage in voting for the next
-              pack, handle subscriptions, and enjoy different views based on
-              their subscription status. This project aims to foster creativity
-              and engagement while offering a seamless and enjoyable user
-              experience.
+              Scout & Sip is a modern web application designed to help users find local happy hours with their favorite amenities, such as live music, outdoor seating, yard games, and more. The platform allows users to explore live and upcoming happy hours, select venues by street location, and find the perfect spot for any social gathering or business meeting.
             </p>
           </div>
           <div className="mt-12">
@@ -66,21 +60,16 @@ const ScoutSipProject = () => {
               Purpose
             </h2>
             <p className="mt-2 text-sm md:text-base text-gray-700 leading-7 md:leading-10 font-light text-left">
-              Funky Scribbles was created to empower artists and creative
-              individuals by giving them access to a variety of creative packs,
-              a say in the future offerings, and a structured way to manage
-              their subscriptions. Unlike other platforms, Funky Scribbles
-              focuses on community-driven content and interaction, ensuring that
-              every user feels valued and heard.
+              Scout & Sip was created to provide a seamless and enjoyable experience for users seeking the best happy hours in their area. By offering real-time updates and personalized options, Scout & Sip helps users discover the perfect vibe and amenities that match their preferences.
             </p>
             <div className="mt-12 flex flex-col items-center">
               <img
                 src={port8}
-                alt="Wireframe 2"
+                alt="Scout & Sip Wireframe"
                 className="w-full h-auto rounded-lg mb-4"
               />
               <p className="text-center text-custom-gray text-xs">
-                designed in figma
+                designed in Figma
               </p>
             </div>
           </div>
@@ -90,72 +79,34 @@ const ScoutSipProject = () => {
             </h2>
             <ol className="mt-2 text-sm md:text-base text-custom-gray leading-7 md:leading-10 text-left list-decimal pl-5">
               <li className="mb-4 font-medium">
-                Creative Pack Selection:
+                Live Happy Hour Updates:
                 <ul className="list-disc font-light pl-5">
                   <li>
-                    Users can browse and select from a wide range of creative
-                    packs tailored to various artistic needs and interests.
-                  </li>
-                  <li>
-                    Each pack includes a detailed description, preview images,
-                    and user ratings to help users make informed decisions.
+                    Users can view live happy hours happening now, making it easy to find the right spot at the right time.
                   </li>
                 </ul>
               </li>
               <li className="mb-4 font-medium">
-                Voting System:
+                Personalized Search:
                 <ul className="list-disc font-light pl-5">
                   <li>
-                    The community can vote on which creative packs should be
-                    added next, ensuring that the offerings align with the
-                    users' preferences.
-                  </li>
-                  <li>
-                    Regular voting events keep the community engaged and excited
-                    about new content.
+                    Filter by amenities such as live music, outdoor seating, and yard games to find the perfect venue.
                   </li>
                 </ul>
               </li>
               <li className="mb-4 font-medium">
-                Subscription Management:
+                Location-Based Discovery:
                 <ul className="list-disc font-light pl-5">
                   <li>
-                    Users can easily manage their subscriptions, with options to
-                    subscribe to different tiers that offer various benefits and
-                    access levels.
-                  </li>
-                  <li>
-                    The subscription system includes automated reminders for
-                    renewals and special offers for long-term subscribers.
+                    Find establishments by street, allowing for convenient and targeted happy hour searches.
                   </li>
                 </ul>
               </li>
               <li className="mb-4 font-medium">
-                User Views:
+                Future Planning:
                 <ul className="list-disc font-light pl-5">
                   <li>
-                    Subscribed users enjoy an enhanced experience with exclusive
-                    content, early access to new packs, and additional
-                    customization options.
-                  </li>
-                  <li>
-                    Non-subscribed users have access to basic features and a
-                    limited selection of packs, encouraging them to upgrade for
-                    a fuller experience.
-                  </li>
-                </ul>
-              </li>
-              <li className="mb-4 font-medium">
-                Community Interaction:
-                <ul className="list-disc font-light pl-5">
-                  <li>
-                    Funky Scribbles fosters a sense of community by allowing
-                    users to create profiles, follow their favorite artists, and
-                    participate in discussions.
-                  </li>
-                  <li>
-                    Interest groups and messaging features enable users to
-                    connect, collaborate, and share their work.
+                    View upcoming happy hours to plan ahead for meetings, dates, or casual outings with friends.
                   </li>
                 </ul>
               </li>
@@ -167,29 +118,18 @@ const ScoutSipProject = () => {
             </h2>
             <ol className="mt-2 text-sm md:text-base text-custom-gray leading-7 md:leading-10 text-left list-decimal pl-5">
               <li className="mb-4 font-medium">
-                Artists and Creatives:
+                Discover New Venues:
                 <ul className="list-disc font-light pl-5">
                   <li>
-                    Gain access to a diverse range of high-quality creative
-                    packs.
-                  </li>
-                  <li>Influence future content through voting.</li>
-                  <li>
-                    Enjoy a tailored experience based on their subscription
-                    level.
+                    Explore a variety of happy hour options tailored to different preferences and needs.
                   </li>
                 </ul>
               </li>
               <li className="mb-4 font-medium">
-                Content Creators:
+                Save Time and Money:
                 <ul className="list-disc font-light pl-5">
                   <li>
-                    Increase visibility and engagement by showcasing their packs
-                    to an active community.
-                  </li>
-                  <li>
-                    Receive feedback and insights from users to improve their
-                    offerings.
+                    Quickly find the best deals and venues, saving time on decision-making and enjoying cost savings on drinks and food.
                   </li>
                 </ul>
               </li>
@@ -197,11 +137,11 @@ const ScoutSipProject = () => {
             <div className="mt-12 flex flex-col items-center">
               <img
                 src={port6}
-                alt="Wireframe 2"
+                alt="Scout & Sip Wireframe"
                 className="w-full h-auto rounded-lg mb-4"
               />
               <p className="text-center text-custom-gray text-xs">
-                designed in figma
+                designed in Figma
               </p>
             </div>
             <div className="mt-12">
@@ -209,21 +149,16 @@ const ScoutSipProject = () => {
                 Project Scope and Timeline
               </h2>
               <p className="mt-2 text-sm md:text-base text-custom-gray leading-7 md:leading-10 font-light text-left">
-                The development of Funky Scribbles spanned 6-8 weeks and
-                involved extensive research, user testing, and iterative design
-                to ensure the platform meets the needs of the creative
-                community. Final files were delivered in collaboration via
-                Figma, featuring a clean file structure ready for development
-                handoff.
+                The development of Scout & Sip involved a comprehensive design and development process, including user research, prototyping, and iterative testing over a 12-16 week period. The final product was delivered via Figma with a clean file structure, ready for seamless integration into the platform.
               </p>
               <div className="mt-12 flex flex-col items-center">
                 <img
-                  src={port7}
-                  alt="Wireframe 2"
+                  src={port5}
+                  alt="Scout & Sip Wireframe"
                   className="w-full h-auto rounded-lg mb-4"
                 />
                 <p className="text-center text-custom-gray text-xs">
-                  designed in figma
+                  designed in Figma
                 </p>
               </div>
             </div>
@@ -232,21 +167,16 @@ const ScoutSipProject = () => {
                 Conclusion
               </h2>
               <p className="mt-2 text-sm md:text-base text-custom-gray leading-7 md:leading-10 font-light text-left">
-                Funky Scribbles is more than just a web application; it's a
-                creative hub that brings artists and creatives together,
-                offering them the tools and community they need to thrive. By
-                focusing on user engagement, subscription management, and
-                community interaction, Funky Scribbles stands out as an
-                inclusive and fun platform for creative expression.
+                Scout & Sip redefines how users discover happy hours by offering a personalized, user-friendly experience that highlights the best local deals and atmospheres. By prioritizing real-time updates, convenient searches, and personalized options, Scout & Sip stands out as the go-to app for happy hour enthusiasts.
               </p>
               <div className="mt-12 flex flex-col items-center">
                 <img
-                  src={port5}
-                  alt="Wireframe 2"
+                  src={port7}
+                  alt="Scout & Sip Wireframe"
                   className="w-full h-auto rounded-lg mb-4"
                 />
                 <p className="text-center text-custom-gray text-xs">
-                  designed in figma
+                  designed in Figma
                 </p>
               </div>
             </div>
