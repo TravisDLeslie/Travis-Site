@@ -1,4 +1,3 @@
-// src/components/ProjectItem.jsx
 import React from 'react';
 
 const ProjectItem = ({ project }) => {
@@ -19,7 +18,11 @@ const ProjectItem = ({ project }) => {
       <div className="bg-white w-full p-4 md:p-6 rounded-b-3xl flex-none" style={{ maxWidth: '685px' }}>
         <p className="mt-4 mb-2 uppercase font-regular text-custom-gray text-sm md:text-base">
           {descriptionParts[0]} 
-          <span className="text-[#B6B6B6]"> • {descriptionParts[1]}</span>
+          <span className="text-[#B6B6B6]">
+            {descriptionParts.slice(1).map((part, index) => (
+              <span key={index}> • {part}</span>
+            ))}
+          </span>
         </p>
         <h2 className="text-custom-gray font-medium text-2xl md:text-3xl">{project.title}</h2>
       </div>

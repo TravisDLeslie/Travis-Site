@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 import logo from "../assets/icons/logo.svg";
 import menuIcon from "../assets/icons/Menu.svg";
 import hero from "../assets/images/RevznHero.png";
-import port2 from "../assets/images/FS1.png";
-import port3 from "../assets/images/FS2.png";
-import port4 from "../assets/images/FS3.png";
-import port5 from "../assets/images/FS4.png";
-import port6 from "../assets/images/FS5.png";
-import port7 from "../assets/images/FS6.png";
-import port8 from "../assets/images/FS7.png";
+import port2 from "../assets/images/RV-1.png";
+import port3 from "../assets/images/RV-2.png";
+import port4 from "../assets/images/RV-3.png";
+import port5 from "../assets/images/RV-1.png";
+import port6 from "../assets/images/RV-2.png";
+import port7 from "../assets/images/RV-3.png";
+import port8 from "../assets/images/RV-4.png";
 import Menu from "../components/Menu";
 import Footer from "../components/Footer";
 
@@ -33,7 +33,7 @@ const RevznProject = () => {
       <div className="mb-8 mx-auto w-full md:w-[calc(100%-200px)]">
         <img
           src={hero}
-          alt="Tesla In-Vehicle Infotainment"
+          alt="Revzn Real Estate Web App"
           className="w-full h-auto rounded-lg"
         />
       </div>
@@ -41,10 +41,10 @@ const RevznProject = () => {
         <section className="w-full max-w-[900px]">
           <div className="mb-8">
             <h2 className="text-xs md:text-sm font-medium text-custom-gray text-left">
-              FUNKY • UX/UI DESIGN • DASHBOARD
+              REVZN • UX/UI DESIGN • REAL ESTATE
             </h2>
             <h1 className="mt-2 text-2xl md:text-4xl font-medium text-custom-gray text-left">
-              Creative Community Dashboard
+              Revzn: Real Estate Offer Management
             </h1>
           </div>
           <div className="mt-12">
@@ -52,13 +52,7 @@ const RevznProject = () => {
               Overview
             </h2>
             <p className="mt-2 text-sm md:text-base text-gray-700 leading-7 md:leading-10 font-light text-left">
-              Funky Scribbles is a web application designed for a vibrant and
-              creative community, providing a platform where users can select
-              creative packs of their choice, engage in voting for the next
-              pack, handle subscriptions, and enjoy different views based on
-              their subscription status. This project aims to foster creativity
-              and engagement while offering a seamless and enjoyable user
-              experience.
+              Revzn is a real estate SaaS platform designed to help agents manage and parse multiple offers on a given property. The app allows users to compare offers in real time, highlight critical details, and easily navigate through essential information, reducing the need to dig through lengthy documents. By providing a secure, centralized platform, Revzn streamlines the offer management process, enabling agents to focus on what matters most.
             </p>
           </div>
           <div className="mt-12">
@@ -66,21 +60,16 @@ const RevznProject = () => {
               Purpose
             </h2>
             <p className="mt-2 text-sm md:text-base text-gray-700 leading-7 md:leading-10 font-light text-left">
-              Funky Scribbles was created to empower artists and creative
-              individuals by giving them access to a variety of creative packs,
-              a say in the future offerings, and a structured way to manage
-              their subscriptions. Unlike other platforms, Funky Scribbles
-              focuses on community-driven content and interaction, ensuring that
-              every user feels valued and heard.
+              Revzn was built to solve the challenge of managing real estate offers, which often consist of up to 17 documents, each containing an overwhelming amount of data. Revzn allows agents to quickly view and compare the most critical pieces of information without combing through entire PDFs. This ensures that agents can make informed decisions faster and more efficiently while maintaining a secure and organized environment for all offer documents.
             </p>
             <div className="mt-12 flex flex-col items-center">
               <img
-                src={port8}
-                alt="Wireframe 2"
+                src={port5}
+                alt="Revzn Wireframe"
                 className="w-full h-auto rounded-lg mb-4"
               />
               <p className="text-center text-custom-gray text-xs">
-                designed in figma
+                designed in Figma
               </p>
             </div>
           </div>
@@ -90,72 +79,37 @@ const RevznProject = () => {
             </h2>
             <ol className="mt-2 text-sm md:text-base text-custom-gray leading-7 md:leading-10 text-left list-decimal pl-5">
               <li className="mb-4 font-medium">
-                Creative Pack Selection:
+                Real-Time Offer Comparison:
                 <ul className="list-disc font-light pl-5">
                   <li>
-                    Users can browse and select from a wide range of creative
-                    packs tailored to various artistic needs and interests.
-                  </li>
-                  <li>
-                    Each pack includes a detailed description, preview images,
-                    and user ratings to help users make informed decisions.
+                    Agents can compare multiple offers side by side in real time, highlighting key pieces of information such as price, contingencies, and timelines.
                   </li>
                 </ul>
               </li>
               <li className="mb-4 font-medium">
-                Voting System:
+                Document Parsing and Summarization:
                 <ul className="list-disc font-light pl-5">
                   <li>
-                    The community can vote on which creative packs should be
-                    added next, ensuring that the offerings align with the
-                    users' preferences.
+                    Automatically parse data from up to 17 documents per offer, summarizing the most important details for quick review.
                   </li>
                   <li>
-                    Regular voting events keep the community engaged and excited
-                    about new content.
+                    Offers a dropdown feature for deeper dives into the full PDFs when needed.
                   </li>
                 </ul>
               </li>
               <li className="mb-4 font-medium">
-                Subscription Management:
+                Secure Offer Management:
                 <ul className="list-disc font-light pl-5">
                   <li>
-                    Users can easily manage their subscriptions, with options to
-                    subscribe to different tiers that offer various benefits and
-                    access levels.
-                  </li>
-                  <li>
-                    The subscription system includes automated reminders for
-                    renewals and special offers for long-term subscribers.
+                    Safely store all offers in one centralized location, ensuring a secure and organized process for managing sensitive real estate data.
                   </li>
                 </ul>
               </li>
               <li className="mb-4 font-medium">
-                User Views:
+                User-Friendly Interface:
                 <ul className="list-disc font-light pl-5">
                   <li>
-                    Subscribed users enjoy an enhanced experience with exclusive
-                    content, early access to new packs, and additional
-                    customization options.
-                  </li>
-                  <li>
-                    Non-subscribed users have access to basic features and a
-                    limited selection of packs, encouraging them to upgrade for
-                    a fuller experience.
-                  </li>
-                </ul>
-              </li>
-              <li className="mb-4 font-medium">
-                Community Interaction:
-                <ul className="list-disc font-light pl-5">
-                  <li>
-                    Funky Scribbles fosters a sense of community by allowing
-                    users to create profiles, follow their favorite artists, and
-                    participate in discussions.
-                  </li>
-                  <li>
-                    Interest groups and messaging features enable users to
-                    connect, collaborate, and share their work.
+                    Simple, clean UI allowing agents to navigate through offers, compare data, and make informed decisions quickly.
                   </li>
                 </ul>
               </li>
@@ -167,41 +121,33 @@ const RevznProject = () => {
             </h2>
             <ol className="mt-2 text-sm md:text-base text-custom-gray leading-7 md:leading-10 text-left list-decimal pl-5">
               <li className="mb-4 font-medium">
-                Artists and Creatives:
+                Real Estate Agents:
                 <ul className="list-disc font-light pl-5">
                   <li>
-                    Gain access to a diverse range of high-quality creative
-                    packs.
+                    Save time by quickly comparing key offer details in one place.
                   </li>
-                  <li>Influence future content through voting.</li>
                   <li>
-                    Enjoy a tailored experience based on their subscription
-                    level.
+                    Access important information at a glance without having to open and scroll through multiple PDFs.
                   </li>
                 </ul>
               </li>
               <li className="mb-4 font-medium">
-                Content Creators:
+                Real Estate Teams:
                 <ul className="list-disc font-light pl-5">
                   <li>
-                    Increase visibility and engagement by showcasing their packs
-                    to an active community.
-                  </li>
-                  <li>
-                    Receive feedback and insights from users to improve their
-                    offerings.
+                    Collaborate efficiently and securely across teams by centralizing all offer data in a single platform.
                   </li>
                 </ul>
               </li>
             </ol>
             <div className="mt-12 flex flex-col items-center">
               <img
-                src={port6}
-                alt="Wireframe 2"
+                src={port8}
+                alt="Revzn Wireframe"
                 className="w-full h-auto rounded-lg mb-4"
               />
               <p className="text-center text-custom-gray text-xs">
-                designed in figma
+                designed in Figma
               </p>
             </div>
             <div className="mt-12">
@@ -209,22 +155,17 @@ const RevznProject = () => {
                 Project Scope and Timeline
               </h2>
               <p className="mt-2 text-sm md:text-base text-custom-gray leading-7 md:leading-10 font-light text-left">
-                The development of Funky Scribbles spanned 6-8 weeks and
-                involved extensive research, user testing, and iterative design
-                to ensure the platform meets the needs of the creative
-                community. Final files were delivered in collaboration via
-                Figma, featuring a clean file structure ready for development
-                handoff.
+                The development of Revzn involved extensive user research, design prototyping, and iterative development over 12-16 weeks. The final design files were delivered through Figma, with a well-structured handoff for development.
               </p>
               <div className="mt-12 flex flex-col items-center">
                 <img
                   src={port7}
-                  alt="Wireframe 2"
+                  alt="Revzn Wireframe"
                   className="w-full h-auto rounded-lg mb-4"
                 />
-                <p className="text-center text-custom-gray text-xs">
-                  designed in figma
-                </p>
+              <p className="text-center text-custom-gray text-xs">
+                designed in Figma
+              </p>
               </div>
             </div>
             <div className="mt-12">
@@ -232,22 +173,17 @@ const RevznProject = () => {
                 Conclusion
               </h2>
               <p className="mt-2 text-sm md:text-base text-custom-gray leading-7 md:leading-10 font-light text-left">
-                Funky Scribbles is more than just a web application; it's a
-                creative hub that brings artists and creatives together,
-                offering them the tools and community they need to thrive. By
-                focusing on user engagement, subscription management, and
-                community interaction, Funky Scribbles stands out as an
-                inclusive and fun platform for creative expression.
+                Revzn revolutionizes the way real estate agents manage offers by providing a secure, centralized platform for comparing, analyzing, and storing critical data. With its clean interface and real-time comparison features, Revzn significantly improves the efficiency of offer management, giving agents more time to focus on closing deals and serving clients.
               </p>
               <div className="mt-12 flex flex-col items-center">
                 <img
-                  src={port5}
-                  alt="Wireframe 2"
+                  src={port6}
+                  alt="Revzn Wireframe"
                   className="w-full h-auto rounded-lg mb-4"
                 />
-                <p className="text-center text-custom-gray text-xs">
-                  designed in figma
-                </p>
+              <p className="text-center text-custom-gray text-xs">
+                designed in Figma
+              </p>
               </div>
             </div>
           </div>
