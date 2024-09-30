@@ -34,7 +34,7 @@ const FixedRightSide = ({ toggleCertifications, scrollDirection, toggleMenu }) =
           <div className="flex flex-wrap justify-center md:justify-start space-x-1 md:space-x-2">
             <div className="w-full flex justify-center md:w-auto md:inline">
               <a 
-                href="/TravisLeslie_UIUX_Designer.pdf" 
+                href="/TravisLeslie-ProductDesigner.pdf" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="text-custom-gray underline mx-4 md:mx-1 hover:font-medium" 
