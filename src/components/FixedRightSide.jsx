@@ -29,7 +29,7 @@ const FixedRightSide = ({ toggleCertifications, scrollDirection, toggleMenu }) =
         </h1>
         <p className="text-custom-gray font-medium mt-4 text-2xl md:mt-8 md:text-5xl">PRODUCT DESIGNER</p>
         <p className="text-custom-gray font-regular mt-8 w-full text-base md:mt-8 md:w-[500px] md:text-lg">
-        I’m a versatile product designer with a passion for creating beautiful, intuitive experiences that have a positive impact on both people and the businesses they represent. With over 8 years of industry experience in UI/UX design and user interactions, I bring a deep understanding of how to craft products that are both user-centered and business-focused.        </p>
+        I’m a versatile product designer with a passion for creating beautiful, intuitive experiences that positively impact both people and the businesses they represent. With over 8 years of industry experience, I bring a deep understanding of crafting products that are both user-centered and business-driven, ensuring they meet user needs while achieving strategic goals.</p>
         <div className="mt-8 w-full md:mt-12">
           <div className="flex flex-wrap justify-center md:justify-start space-x-1 md:space-x-2">
             <div className="w-full flex justify-center md:w-auto md:inline">
