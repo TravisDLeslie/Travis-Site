@@ -27,10 +27,9 @@ const FixedRightSide = ({ toggleCertifications, scrollDirection, toggleMenu }) =
         <h1 className="text-custom-gray font-bold leading-none text-3xl md:text-[100px]">
           <span className="inline md:block">TRAVIS</span> <span className="inline md:block">LESLIE</span>
         </h1>
-        <p className="text-custom-gray font-medium mt-4 text-2xl md:mt-8 md:text-5xl">UI/UX DESIGNER</p>
+        <p className="text-custom-gray font-medium mt-4 text-2xl md:mt-8 md:text-5xl">PRODUCT DESIGNER</p>
         <p className="text-custom-gray font-regular mt-8 w-full text-base md:mt-8 md:w-[500px] md:text-lg">
-          I’m a versatile UI/UX designer with a passion for designing beautiful, intuitive experiences with a positive impact on people and the business they represent. I have 8+ years of industry experience with user interactions & design.
-        </p>
+        I’m a versatile product designer with a passion for creating beautiful, intuitive experiences that have a positive impact on both people and the businesses they represent. With over 8 years of industry experience in UI/UX design and user interactions, I bring a deep understanding of how to craft products that are both user-centered and business-focused.        </p>
         <div className="mt-8 w-full md:mt-12">
           <div className="flex flex-wrap justify-center md:justify-start space-x-1 md:space-x-2">
             <div className="w-full flex justify-center md:w-auto md:inline">
